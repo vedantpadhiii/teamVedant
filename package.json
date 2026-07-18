@@ -1,0 +1,27 @@
+{
+  "name": "marathon",
+  "version": "1.0.0",
+  "description": "Team Vedant - SF Marathon 2026 Fundraiser",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.5.2",
+    "framer-motion": "^12.42.2",
+    "postcss": "^8.5.17",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^3.4.11"
+  }
+}

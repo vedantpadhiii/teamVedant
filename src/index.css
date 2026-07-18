@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 bg-white;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold;
+  }
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .cta-button {
+    @apply inline-block px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-full transition-all duration-300 ease-out hover:shadow-lg hover:scale-105 cursor-pointer;
+  }
+
+  .cta-button:active {
+    @apply scale-95;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply shadow-xl;
+  }
+
+  .section {
+    @apply py-16 md:py-24 px-4 md:px-6;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced transitions */
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  /* Button enhancements */
+  button, [role="button"], a {
+    @apply cursor-pointer;
+  }
+
+  /* Link styling */
+  a:focus-visible {
+    @apply outline-none ring-2 ring-accent-500 rounded;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .glow-accent {
+    @apply drop-shadow-lg;
+    filter: drop-shadow(0 0 10px rgba(232, 106, 82, 0.3));
+  }
+
+  .glow-accent-intense {
+    filter: drop-shadow(0 0 20px rgba(232, 106, 82, 0.5));
+  }
+}
+
