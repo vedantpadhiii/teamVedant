@@ -76,20 +76,6 @@ export default function Hero() {
           <span className="font-semibold text-accent-300">July 26, 2026</span>
         </motion.p>
 
-        {/* CTA Button */}
-        <motion.div className="mb-16" variants={itemVariants}>
-          <motion.a
-            href={DONATE_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button inline-block text-lg"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            Donate Now
-          </motion.a>
-        </motion.div>
-
         {/* Countdown Timer */}
         <motion.div variants={itemVariants} className="mb-8">
           <p className="text-warmth/60 text-sm md:text-base uppercase tracking-widest mb-6 font-semibold">
