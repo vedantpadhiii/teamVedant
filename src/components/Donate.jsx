@@ -76,7 +76,7 @@ export default function Donate() {
             className="card p-8 md:p-12 bg-primary-50"
             whileHover={{ boxShadow: '0 15px 40px rgba(26, 125, 158, 0.1)' }}
           >
-            <ProgressBar raised={404} goal={5000} />
+            <ProgressBar raised={704} goal={5000} />
           </motion.div>
 
           {/* Supporting Text */}
